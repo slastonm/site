@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "blogsite",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -58,7 +58,15 @@
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "rules": {},
+    "rules": {
+      "@typescript-eslint/no-inferrable-types": [
+        2,
+        {
+          "ignoreParameters": true,
+          "ignoreProperties": true
+        }
+      ]
+    },
     "overrides": [
       {
         "files": [
