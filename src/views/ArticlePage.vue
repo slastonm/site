@@ -32,24 +32,24 @@ export default class ArticlePage extends Vue {
 <template>
   <el-row type="flex" justify="center" class="article-page">
     <el-col :xs="23" :sm="22" :md="20" :lg="16" :xl="16">
-      {{ content }}
-      {{ tickets }}
-      <hr>
-      {{ articleById }}111
-      <!-- <h1>
-        {{ content.title }}
+      <!-- {{ content }}
+      {{ tickets }} -->
+      <!-- <hr> -->
+      <!-- {{ articleById }}111 -->
+      <h1>
+        {{ articleById.title }}
       </h1>
-      <img :src="content.image" alt="post picture" />
+      <img :src="articleById.image" alt="post picture" />
       <p>
-        {{ content.text }}
+        {{ articleById.text }}
       </p>
       <el-divider></el-divider>
       <el-row type="flex" justify="space-between">
         <el-col :span="12" class="article-information text-left">
-          {{ content.autor }}
+          {{ articleById.autor }}
         </el-col>
         <el-col :span="12" class="article-information text-right">
-          {{ content.postTime }}
+          {{ articleById.postTime }}
         </el-col>
       </el-row>
       <el-row type="flex" justify="center" class="article-control">
@@ -58,7 +58,7 @@ export default class ArticlePage extends Vue {
             $t("article.back-button")
           }}</el-button>
         </el-col>
-      </el-row> -->
+      </el-row>
     </el-col>
   </el-row>
 </template>
